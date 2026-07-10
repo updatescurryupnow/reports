@@ -171,6 +171,40 @@ table.wt{width:100%;border-collapse:collapse;margin-top:8px;}
 .ddhow.good{background:#f2faf4;border-left-color:#1a7a3a;}
 .ddhow b{color:var(--orange);}.ddhow.good b{color:#1a7a3a;}
 @media(max-width:720px){.ddgrid{grid-template-columns:1fr;}}
+
+.ptbanner{font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:8px;margin:14px 0 8px;color:#fff;}
+.ptbanner.labor{background:var(--pink);}.ptbanner.ord{background:var(--blue);}
+.ptbanner .ptbl{font-size:10px;font-weight:900;letter-spacing:.08em;background:rgba(255,255,255,.25);padding:2px 8px;border-radius:4px;margin-right:8px;}
+.ptbanner b{font-size:15px;}
+.ptgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:6px;}
+.ptcard{border:1.5px solid var(--line);border-left:4px solid var(--pink);border-radius:0 10px 10px 0;padding:12px 14px;}
+.ptcard.ord{border-left-color:var(--blue);}
+.ptwk{font-size:12px;font-weight:800;margin-bottom:8px;color:#333;}
+.ptrow{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;}
+.ptl{font-size:11px;color:#666;}.ptv{font-size:12px;font-weight:800;}.ptv.bad{color:#c0121b;}
+.ptaction{background:#fef4f8;border-radius:7px;padding:8px 11px;margin:7px 0;font-size:12px;line-height:1.5;color:#333;}
+.ptaction.ord{background:#f2fafe;}.ptaction b{color:var(--pink);}.ptaction.ord b{color:var(--blue);}
+.ptrow2{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#888;font-weight:600;}
+@media(max-width:720px){.ptgrid{grid-template-columns:1fr;}}
+
+.pjgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0;}
+.pjcard{border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;}
+.pjwk{font-size:12.5px;font-weight:800;margin-bottom:9px;color:#333;}
+.pjmetric{margin-bottom:9px;}
+.pjlabel{font-size:9.5px;font-weight:900;letter-spacing:.06em;color:var(--pink);margin-bottom:2px;}
+.pjmetric.ord .pjlabel{color:var(--blue);}
+.pjtarget{font-size:13px;color:#333;}.pjtarget b{color:#111;}
+.pjsub{font-size:10px;color:#888;font-weight:600;margin-top:2px;line-height:1.4;}
+.pjland{background:var(--soft);border-radius:11px;padding:15px 18px;margin-top:6px;}
+.pjlandh{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#555;margin-bottom:10px;}
+.pjlandrow{display:flex;gap:12px;}
+.pjlandstat{flex:1;background:#fff;border:1.5px solid var(--line);border-radius:9px;padding:11px;text-align:center;}
+.pjlandstat.big{border-width:2px;border-color:var(--pink);}
+.pjlv{font-size:22px;font-weight:900;line-height:1;}
+.pjll{font-size:10px;font-weight:800;text-transform:uppercase;color:#888;margin-top:4px;}
+.pjlg{font-size:9.5px;font-weight:700;color:#aaa;margin-top:2px;}
+.pjlandnote{font-size:11px;line-height:1.5;color:#555;margin-top:11px;padding-top:10px;border-top:1px solid var(--line);}
+@media(max-width:720px){.pjgrid{grid-template-columns:1fr;}.pjlandrow{flex-direction:column;}}
 </style></head><body>
 <div class="page">
   <div class="hero"><div class="eyebrow" style="color:#fff">Store Scorecard &amp; Action Plan &middot; P4&ndash;P7 &middot; through 7/5/26</div><h1>San Jose</h1><div class="sub" style="color:#ffe8f0">GM Anmol &nbsp;&middot;&nbsp; Prime cost focus</div><div class="heroline" style="border-color:#fff">Prime cost is the target. Every shift metric is a lever: grow sales or cut expense to pull prime under budget.</div></div>
@@ -728,8 +762,75 @@ table.wt{width:100%;border-collapse:collapse;margin-top:8px;}
       
     </div><div class="view" id="view-P7">
       <div class="primeband">P7 &middot; Prime cost is the target &mdash; the metrics below are the levers</div>
-      <div class="pstrip"><div class="pstat hl"><div class="psv" style="color:#ccc">&mdash;</div><div class="psl">Actual P&amp;L prime</div><div class="pss">not booked yet</div></div><div class="pstat"><div class="psv">29.7%</div><div class="psl">Labor (admin)</div><div class="pss">goal 32%</div></div></div>
-      <div class="callout"><b>P7:</b> Two weeks in, prime pending, but labor near goal (29.7% vs 32% all-in budget). Sales down, pressuring prime up.</div>
+      <div class="pstrip"><div class="pstat"><div class="psv" style="color:#c0121b">68.8%</div><div class="psl">Tracker prime</div><div class="pss" style="color:#c0121b">+16.8pt vs budget</div></div><div class="pstat hl"><div class="psv" style="color:#ccc">&mdash;</div><div class="psl">Actual P&amp;L prime</div><div class="pss">not booked yet</div></div><div class="pstat"><div class="psv">39.9%</div><div class="psl">True labor</div><div class="pss">goal 32%</div></div><div class="pstat"><div class="psv">28.9%</div><div class="psl">Ordering</div><div class="pss">goal 20%</div></div></div>
+      <div class="callout"><b>P7:</b> Two weeks in. True labor ran 39.9% and ordering 28.9%, putting prime at 68.8% vs the 52% budget. The path-to-target below shows exactly how much to cut. Sales are down, which pressures prime further.</div>
+      <h2 class="pink">Path to target &mdash; P7 <span class="srcnote">how much to cut to hit goal &middot; from admin data</span></h2>
+      <div class="callout act"><b>The math to get prime under budget.</b> True labor (Hr+Sal + Tax/Benefits) ran 39.9% and ordering 28.9% in P7 &mdash; prime at 68.8% vs the 52% budget. Tax/Benefits (~4.5% of sales) are not controllable, so the cut lands on Hr+Sal. Bring Hr+Sal to 27.5% and it projects to the 32% true-labor goal.</div>
+      <div class="ptbanner labor"><span class="ptbl">LABOR</span> Cut Hr+Sal <b>$5,452</b> across the period to reach the 32% true-labor goal</div>
+      <div class="ptgrid"><div class="ptcard">
+          <div class="ptwk">W1 &middot; sales $38,216</div>
+          <div class="ptrow"><span class="ptl">True labor now</span><span class="ptv bad">$14,889 (39.0%)</span></div>
+          <div class="ptrow"><span class="ptl">Hr+Sal now (controllable)</span><span class="ptv">$13,176 (34.5%)</span></div>
+          <div class="ptaction"><b>Cut Hr+Sal $2,667</b> &rarr; to $10,509 (27.5%). Projects ~32.0% true labor.</div>
+          <div class="ptrow2"><span>Schedule to <b>425 labor hours</b> at $90 SPLH</span><span>OT was 40 hrs &mdash; eliminate first</span></div>
+        </div><div class="ptcard">
+          <div class="ptwk">W2 &middot; sales $31,790</div>
+          <div class="ptrow"><span class="ptl">True labor now</span><span class="ptv bad">$13,027 (41.0%)</span></div>
+          <div class="ptrow"><span class="ptl">Hr+Sal now (controllable)</span><span class="ptv">$11,528 (36.3%)</span></div>
+          <div class="ptaction"><b>Cut Hr+Sal $2,786</b> &rarr; to $8,742 (27.5%). Projects ~32.2% true labor.</div>
+          <div class="ptrow2"><span>Schedule to <b>353 labor hours</b> at $90 SPLH</span><span>OT was 17 hrs &mdash; eliminate first</span></div>
+        </div></div>
+      <div class="ptbanner ord"><span class="ptbl">ORDERING</span> Cut <b>$6,227</b> across the period to reach the 20% goal</div>
+      <div class="ptgrid"><div class="ptcard ord">
+          <div class="ptwk">W1 &middot; sales $38,216</div>
+          <div class="ptrow"><span class="ptl">Ordering now</span><span class="ptv bad">$11,623 (30.4%)</span></div>
+          <div class="ptaction ord"><b>Cut ordering $3,980</b> &rarr; to $7,643 (20%).</div>
+          <div class="ptrow2"><span>Trim the Sysco line first (biggest lever)</span><span>Size orders to forecast, not to the week</span></div>
+        </div><div class="ptcard ord">
+          <div class="ptwk">W2 &middot; sales $31,790</div>
+          <div class="ptrow"><span class="ptl">Ordering now</span><span class="ptv bad">$8,605 (27.1%)</span></div>
+          <div class="ptaction ord"><b>Cut ordering $2,247</b> &rarr; to $6,358 (20%).</div>
+          <div class="ptrow2"><span>Trim the Sysco line first (biggest lever)</span><span>Size orders to forecast, not to the week</span></div>
+        </div></div>
+      <div class="tablenote">True labor = Hr+Sal + Tax/Benefits (what we report). GMs control Hr+Sal only; tax/benefits (~4.5% of sales) are added to project true labor. $90 SPLH is the scheduling productivity bar. Ordering goal 20% is SJ-specific (each store has its own).</div>
+      <h2 class="orange">Rest-of-period plan &mdash; P7 W3 &amp; W4 <span class="srcnote">projected sales from admin &middot; run as tight as possible</span></h2>
+      <div class="callout"><b>The honest read.</b> W1 and W2 overran so far that even running W3 and W4 aggressively tight (30% labor, 18% ordering &mdash; both under budget) cannot fully recover the period. But the discipline still matters: tight W3/W4 lands prime near <b>58%</b> instead of ~60% if they just coast at budget. This is the bare-minimum-controllable plan to get as close to target as the period allows.</div>
+      <div class="pjgrid"><div class="pjcard">
+          <div class="pjwk">W3 &middot; projected sales $37,600</div>
+          <div class="pjmetric">
+            <div class="pjlabel">TRUE LABOR</div>
+            <div class="pjtarget">Run <b>30%</b> = <b>$11,280</b></div>
+            <div class="pjsub">Hr+Sal ~25.5% ($9,588) &middot; schedule 418 hrs @ $90 SPLH &middot; $752 under the 32% budget</div>
+          </div>
+          <div class="pjmetric ord">
+            <div class="pjlabel">ORDERING</div>
+            <div class="pjtarget">Run <b>18%</b> = <b>$6,768</b></div>
+            <div class="pjsub">$752 under the 20% budget &middot; trim Sysco line, order to forecast</div>
+          </div>
+        </div><div class="pjcard">
+          <div class="pjwk">W4 &middot; projected sales $37,700</div>
+          <div class="pjmetric">
+            <div class="pjlabel">TRUE LABOR</div>
+            <div class="pjtarget">Run <b>30%</b> = <b>$11,310</b></div>
+            <div class="pjsub">Hr+Sal ~25.5% ($9,614) &middot; schedule 419 hrs @ $90 SPLH &middot; $754 under the 32% budget</div>
+          </div>
+          <div class="pjmetric ord">
+            <div class="pjlabel">ORDERING</div>
+            <div class="pjtarget">Run <b>18%</b> = <b>$6,786</b></div>
+            <div class="pjsub">$754 under the 20% budget &middot; trim Sysco line, order to forecast</div>
+          </div>
+        </div></div>
+      <div class="pjland">
+        <div class="pjlandh">Where the period lands with this plan</div>
+        <div class="pjlandrow">
+          <div class="pjlandstat"><div class="pjlv" style="color:#c0121b">34.8%</div><div class="pjll">True labor</div><div class="pjlg">goal 32% &middot; +2.8pt</div></div>
+          <div class="pjlandstat"><div class="pjlv" style="color:#c0121b">23.2%</div><div class="pjll">Ordering</div><div class="pjlg">goal 20% &middot; +3.2pt</div></div>
+          <div class="pjlandstat big"><div class="pjlv" style="color:#c0121b">58.0%</div><div class="pjll">PRIME</div><div class="pjlg">budget 52% &middot; +6.0pt</div></div>
+        </div>
+        <div class="pjlandnote">Tight W3/W4 (58% prime) vs coasting at budget (~60% prime): the discipline saves ~2 points. Full recovery to 52% would need W3/W4 at ~25% labor and ~12% ordering, which is not operationally realistic &mdash; so the goal now is damage control, and carrying the discipline into P8 from week 1.</div>
+      </div>
+    
+    
 
       <div class="focus2">#2 focus &middot; Avg per guest (dine-in)</div>
       <div class="ag2row">
